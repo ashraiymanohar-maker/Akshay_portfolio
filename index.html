@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Akshay Kumar Gupta | Full Stack Developer</title>
-    <link rel="stylesheet" href="style.css">
+
+    <!-- Fonts + Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-    <!-- Navigation Bar -->
+    <!-- NAVBAR -->
     <nav class="navbar">
         <div class="logo">Akshay Gupta</div>
         <ul class="nav-links">
@@ -20,27 +27,33 @@
         </ul>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- HERO -->
     <section id="home" class="hero">
-        <div class="hero-content">
-            <h1 class="fade-in">Hi, I'm <span>Akshay Kumar Gupta</span></h1>
-            <p class="fade-in delay">Java Full Stack Developer | Spring Boot | Angular | Vue.js | Microservices</p>
-            <a href="#projects" class="btn fade-in delay2">View My Work</a>
+        <div class="hero-box">
+            <img src="https://i.ibb.co/1bLZQfR/default-profile.jpg" class="profile-img" />
+            <h1>Hello, I'm <span>Akshay Kumar Gupta</span></h1>
+            <p>Full Stack Developer • Java • Spring Boot • Angular • Vue.js • Microservices</p>
+
+            <!-- Resume Button -->
+            <a href="resume.pdf" class="btn" download>
+                <i class="fa-solid fa-file-arrow-down"></i> Download Resume
+            </a>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about section">
+    <!-- ABOUT -->
+    <section id="about" class="section about">
         <h2 class="section-title">About Me</h2>
         <p class="section-desc">
-            I am a Full Stack Developer with 3+ years of experience building secure and scalable FinTech applications.
-            I specialize in Java, Spring Boot, Angular/Vue.js, REST APIs, and microservices architecture.
-            I enjoy solving complex engineering challenges, optimizing backend systems, and creating clean and responsive UI designs.
+            I am a Full Stack Developer with 3+ years of experience building secure, scalable and high-performance
+            FinTech applications. Skilled in Java, Spring Boot, REST APIs, Angular, Vue.js, SQL, microservices,
+            and cloud-native development. Passionate about solving backend challenges, improving system performance,
+            and creating clean UI/UX experiences.
         </p>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills section">
+    <!-- SKILLS -->
+    <section id="skills" class="section skills">
         <h2 class="section-title">Skills</h2>
         <div class="skills-grid">
             <div class="skill-card">Java</div>
@@ -58,44 +71,76 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects section">
+    <!-- PROJECTS -->
+    <section id="projects" class="section projects">
         <h2 class="section-title">Projects</h2>
 
-        <div class="project-card fade-in">
+        <!-- Project 1 -->
+        <div class="project-card fade-item">
             <h3>Enterprise FinTech Platform (US Client)</h3>
-            <p>
-                Built scalable Spring Boot microservices, secured REST APIs, optimized SQL queries,
-                and developed UI components for a high-performance financial platform.
+            <p class="project-desc">
+                Built secure Spring Boot microservices, optimized backend APIs, strengthened SQL operations and contributed Angular UI views.
             </p>
-            <span class="tech">Java · Spring Boot · Microservices · Angular · MySQL</span>
+            <ul class="proj-details">
+                <li>• Designed scalable microservices architecture</li>
+                <li>• Improved API response time by 30%</li>
+                <li>• Optimized Oracle & MySQL queries</li>
+                <li>• Created responsive UI components</li>
+            </ul>
+            <span class="tech">Java • Spring Boot • Angular • Microservices</span>
         </div>
 
-        <div class="project-card fade-in delay">
+        <!-- Project 2 -->
+        <div class="project-card fade-item">
             <h3>FinTech Web Platform (Dutch Client)</h3>
-            <p>
-                Enhanced UI responsiveness with Vue.js, developed backend logic, improved MySQL
-                performance, and ensured seamless API communication.
+            <p class="project-desc">
+                Delivered full-stack modules using Vue.js + Spring Boot. Improved DB performance and built dashboards & interactive UI features.
             </p>
-            <span class="tech">Vue.js · Java · Spring Boot · MySQL</span>
+            <ul class="proj-details">
+                <li>• Developed dynamic Vue.js components</li>
+                <li>• Improved SQL query time by 40%</li>
+                <li>• Refined backend service layers</li>
+                <li>• Strengthened validations & security</li>
+            </ul>
+            <span class="tech">Vue.js • Spring Boot • MySQL</span>
         </div>
 
-        <div class="project-card fade-in delay2">
-            <h3>European Financial App</h3>
-            <p>
-                Delivered full-stack features using Angular + Spring Boot, optimized database schemas,
-                and improved overall system performance.
+        <!-- Project 3 -->
+        <div class="project-card fade-item">
+            <h3>European Financial Application</h3>
+            <p class="project-desc">
+                Built full-stack features with Angular + Spring Boot and redesigned Oracle DB schemas for better performance.
             </p>
-            <span class="tech">Angular · Spring Boot · Oracle DB</span>
+            <ul class="proj-details">
+                <li>• Created reusable Angular UI modules</li>
+                <li>• Reduced backend bottlenecks by 25%</li>
+                <li>• Improved DB indexing & relations</li>
+                <li>• Actively contributed in Agile sprints</li>
+            </ul>
+            <span class="tech">Angular • Spring Boot • Oracle</span>
         </div>
+
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
         <h2 class="section-title">Contact</h2>
-        <p>Email: akshay.gupta0729@gmail.com</p>
-        <p>LinkedIn: linkedin.com/in/akshaygupta2029</p>
-        <p>Bengaluru, India</p>
+
+        <div class="contact-box">
+
+            <a href="mailto:akshay.gupta0729@gmail.com" target="_blank">
+                <i class="fa-solid fa-envelope"></i> Email
+            </a>
+
+            <a href="https://linkedin.com/in/akshaygupta2029" target="_blank">
+                <i class="fa-brands fa-linkedin"></i> LinkedIn
+            </a>
+
+            <a href="https://github.com/ashraiymanohar-maker" target="_blank">
+                <i class="fa-brands fa-github"></i> GitHub
+            </a>
+
+        </div>
     </section>
 
     <script src="script.js"></script>
